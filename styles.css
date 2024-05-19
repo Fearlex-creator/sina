@@ -1,15 +1,16 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif; /* Modern and sleek font */
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
+    background-color: #1a1a1a; /* Dark background for a futuristic vibe */
 }
 
 header {
-    background-color: #333;
+    background-color: #222; /* Darker header for contrast */
     color: #fff;
     padding: 20px;
     text-align: center;
+    position: relative; /* Positioning for the animated corner */
 }
 
 header h1 {
@@ -30,6 +31,11 @@ nav ul li {
 nav ul li a {
     color: #fff;
     text-decoration: none;
+    transition: color 0.3s ease; /* Smooth transition for link color change */
+}
+
+nav ul li a:hover {
+    color: #66ccff; /* Change link color on hover */
 }
 
 .section {
@@ -38,10 +44,20 @@ nav ul li a {
 }
 
 footer {
-    background-color: #333;
+    background-color: #222; /* Darker footer for contrast */
     color: #fff;
     text-align: center;
     padding: 20px;
+}
+
+/* GitHub Corner */
+.github-corner {
+    position: absolute;
+    top: 0;
+    right: 0;
+    fill: #fff;
+    color: #000;
+    transition: fill 0.3s ease, color 0.3s ease; /* Smooth transition for color change */
 }
 
 .github-corner:hover .octo-arm {
